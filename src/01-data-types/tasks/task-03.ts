@@ -9,3 +9,10 @@
  * 
  * display the student data using console.log.
  */
+const StudentInformation1: string = "Student ID"
+const StudentInformation2: string = "Student Full name"
+const StudentInformation3: string = "Student Age"
+
+console.log(StudentInformation1)
+console.log(StudentInformation2)
+console.log(StudentInformation3)
