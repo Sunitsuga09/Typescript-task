@@ -17,7 +17,17 @@
 
 const studentName: string = "Nadia Putri"
 const studentID: string = "ST2026045"
+const assignmentScore: number = 88.5
+const midtermScore: number = 84
+const finalExamScore: number = 91.5
+const attendanceScore: number = 100
+const participatesInExtracurricular: boolean = true
 
 
 console.log(studentName)
 console.log(studentID)
+console.log(assignmentScore)
+console.log(midtermScore)
+console.log(finalExamScore)
+console.log(attendanceScore)
+console.log(participatesInExtracurricular)

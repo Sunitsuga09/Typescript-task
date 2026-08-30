@@ -11,4 +11,51 @@
  * display the book data using console.log.
  */
 
-const BookNumber: string 
+
+
+type book = {
+    author: string;
+    title: string;
+    isbnNumber: number;
+    numberOfPages: number;
+    available: boolean;
+    bookCategory: string;
+};
+
+const book1: book ={
+    author: "Sunitsuga",
+    title: "Asal-Usul Ambaruwo",
+    isbnNumber: 91827,
+    numberOfPages: 379,
+    available: true,
+    bookCategory: "Horor",
+    
+};
+
+const book2: book ={
+    author: "Sunit",
+    title: "Sejarah Kekaisaran Ngawi",
+    isbnNumber: 98765,
+    numberOfPages: 1098,
+    available: false,
+    bookCategory: "History",
+};
+
+const book3: book ={
+    author: "Sunit",
+    title: "3 Pilot Ngawi Terjebak di Pulau Kanibal",
+    isbnNumber: 12567,
+    numberOfPages: 209,
+    available: true,
+    bookCategory: "Fiction",
+};
+
+
+console.log("\n=== BOOK 1 ===");
+console.log(book1)
+
+console.log("\n=== BOOK 2 ===");
+console.log(book2)
+
+console.log("\n=== BOOK 3 ===");
+console.log(book3)

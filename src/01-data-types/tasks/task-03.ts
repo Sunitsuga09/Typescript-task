@@ -9,10 +9,44 @@
  * 
  * display the student data using console.log.
  */
-const StudentInformation1: string = "Student ID"
-const StudentInformation2: string = "Student Full name"
-const StudentInformation3: string = "Student Age"
 
-console.log(StudentInformation1)
-console.log(StudentInformation2)
-console.log(StudentInformation3)
+
+
+type student = {
+    studentId: string;
+    fullName: string;
+    age: number;
+    isActive: boolean;
+};
+
+
+const student1: student = {
+    studentId: "ST2026045",
+    fullName: "Nadia Putri",
+    age: 15,
+    isActive: true,
+};
+
+const student2: student = {
+    studentId: "ST2026046",
+    fullName: "Raka Pratama",
+    age: 16,
+    isActive: true,
+};
+
+
+const student3: student = {
+    studentId: "ST2026047",
+    fullName: "Siti Rahma",
+    age: 15,
+    isActive: false,
+};
+
+console.log("\n=== STUDENT 1 ===");
+console.log(student1)
+
+console.log("\n=== STUDENT 2 ===");
+console.log(student2)
+
+console.log("\n=== STUDENT 3 ===");
+console.log(student3)
