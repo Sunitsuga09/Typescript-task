@@ -23,6 +23,7 @@ type course = {
     courseId: number;
     instrukturName: string;
     totalLearningHour: number;
+    date: Date;
 };
 
 const student1: student = {
@@ -36,6 +37,7 @@ const course1: course = {
     courseId: 9239,
     instrukturName: "Mr. Sunit",
     totalLearningHour: 3,
+    date: new Date("2026-08-24")
 };
 
 const student2: student = {
@@ -49,6 +51,7 @@ const course2: course = {
     courseId: 9130,
     instrukturName: "Mr. Suga",
     totalLearningHour: 2,
+    date: new Date("2026-08-25")
 };
 
 const student3: student = {
@@ -62,6 +65,7 @@ const course3: course = {
     courseId: 9221,
     instrukturName: "Mr. Suga",
     totalLearningHour: 1,
+     date: new Date("2026-08-26")
 };
 
 console.log("\n=== STUDENT 1 ===");

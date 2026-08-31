@@ -28,7 +28,10 @@ console.log("Product Name:", productName);
 console.log("Product Code:", productCode);
 console.log("Original Price:", originalPrice);
 console.log("Discount:", discount + "%");
+console.log(`Discount ${discount} %`)
 console.log("Quantity:", quantity);
 console.log("Premium Member:", isPremiumMember);
 console.log("Free Shipping:", isFreeShipping);
 console.log("Available Stock:", stock);
+
+console.log("current:", stock - quantity)
