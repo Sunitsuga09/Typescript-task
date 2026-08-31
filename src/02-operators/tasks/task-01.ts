@@ -14,3 +14,19 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+const friedRice: number= 18000;
+const drink: number= 5000;
+const discount: number= 10000;
+
+console.log("\n===TOTAL FOOD PRICE===")
+console.log ("friedRice * 3=", friedRice * 3);
+
+console.log("\n===TOTAL DRINK PRICE===")
+console.log ("drink * 2=", drink * 2);
+
+console.log("\n===GRAND TOTAL===")
+console.log ("drink * 2 + friedRice * 3=", drink * 2 + friedRice * 3);
+
+console.log("\n===Final PAYMENT===")
+console.log ("drink * 2 + friedRice * 3 - discount", drink * 2 + friedRice * 3 - discount);

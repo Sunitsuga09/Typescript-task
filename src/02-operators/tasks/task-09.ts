@@ -34,3 +34,32 @@
  * - Free shipping eligibility
 
  */
+
+const keyboardPrice = 850000;
+const keyboardQuantity = 1;
+const mousePrice = 275000;
+const mouseQuantity = 2;
+const monitorStandPrice = 420000;
+const monitorStandQuantity = 1;
+const voucherValue = 100000;
+const isPremiumMember = true;
+const rewardPointRate = 50000;
+const vatRate = 0.11;
+
+const productSubtotal = (keyboardPrice * keyboardQuantity) + (mousePrice * mouseQuantity) + (monitorStandPrice * monitorStandQuantity);
+const membershipDiscount = isPremiumMember ? productSubtotal * 0.1 : 0;
+const afterMembershipDiscount = productSubtotal - membershipDiscount;
+const paymentBeforeTax = afterMembershipDiscount - voucherValue;
+const vat = paymentBeforeTax * vatRate;
+const finalPayment = paymentBeforeTax + vat;
+const rewardPoints = Math.floor(paymentBeforeTax / rewardPointRate);
+const freeShipping = isPremiumMember || paymentBeforeTax > 1500000;
+
+console.log(`Product Subtotal: Rp${productSubtotal.toLocaleString('id-ID')}`);
+console.log(`Membership Discount: Rp${membershipDiscount.toLocaleString('id-ID')}`);
+console.log(`Voucher Deduction: Rp${voucherValue.toLocaleString('id-ID')}`);
+console.log(`Payment Before Tax: Rp${paymentBeforeTax.toLocaleString('id-ID')}`);
+console.log(`VAT: Rp${vat.toLocaleString('id-ID')}`);
+console.log(`Final Payment: Rp${finalPayment.toLocaleString('id-ID')}`);
+console.log(`Reward Points: ${rewardPoints}`);
+console.log(`Free Shipping Eligible: ${freeShipping}`);
