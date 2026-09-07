@@ -25,18 +25,18 @@
  * - Green Energy Program eligibility
  */
 
-const previousMeter = 25640;
-const currentMeter = 25892;
-const pricePerKwh = 1650;
-const hasSolarPanel = true;
-const energySavingModeEnabled = false;
+const previousMeter : number = 25640;
+const currentMeter : number = 25892;
+const pricePerKwh : number = 1650;
+const hasSolarPanel : boolean = true;
+const energySavingModeEnabled : boolean = false;
 
-const energyConsumption = currentMeter - previousMeter;
-const electricityBill = energyConsumption * pricePerKwh;
-const solarDiscount = hasSolarPanel ? electricityBill * 0.2 : 0;
-const savingModeDiscount = energySavingModeEnabled ? (electricityBill - solarDiscount) * 0.05 : 0;
-const finalBill = electricityBill - solarDiscount - savingModeDiscount;
-const greenEnergyEligible = 
+const energyConsumption : number = currentMeter - previousMeter;
+const electricityBill : number = energyConsumption * pricePerKwh;
+const solarDiscount : number = hasSolarPanel ? electricityBill * 0.2 : 0;
+const savingModeDiscount : number = energySavingModeEnabled ? (electricityBill - solarDiscount) * 0.05 : 0;
+const finalBill : number = electricityBill - solarDiscount - savingModeDiscount;
+const greenEnergyEligible : boolean = 
   hasSolarPanel && 
   energyConsumption < 300 && 
   energySavingModeEnabled;

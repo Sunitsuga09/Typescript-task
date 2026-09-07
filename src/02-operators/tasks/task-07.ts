@@ -22,18 +22,18 @@
  * - Whether the guest is eligible for free breakfast
  */
 
-const roomPrice = 650000;
-const nightsStayed = 4;
-const serviceCharge = 120000;
-const taxRate = 0.11;
-const isVipMember = true;
+const roomPrice : number = 650000;
+const nightsStayed : number = 4;
+const serviceCharge : number = 120000;
+const taxRate : number = 0.11;
+const isVipMember : boolean = true;
 
-const roomSubtotal = roomPrice * nightsStayed;
-const discount = isVipMember ? roomSubtotal * 0.12 : 0;
-const discountedRoomPrice = roomSubtotal - discount;
-const tax = discountedRoomPrice * taxRate;
-const finalPayment = discountedRoomPrice + serviceCharge + tax;
-const freeBreakfast = nightsStayed >= 3 || isVipMember;
+const roomSubtotal : number = roomPrice * nightsStayed;
+const discount : number = isVipMember ? roomSubtotal * 0.12 : 0;
+const discountedRoomPrice : number = roomSubtotal - discount;
+const tax : number = discountedRoomPrice * taxRate;
+const finalPayment : number = discountedRoomPrice + serviceCharge + tax;
+const freeBreakfast : boolean = nightsStayed >= 3 || isVipMember;
 
 console.log(`Room Subtotal: Rp${roomSubtotal.toLocaleString('id-ID')}`);
 console.log(`Discount: Rp${discount.toLocaleString('id-ID')}`);

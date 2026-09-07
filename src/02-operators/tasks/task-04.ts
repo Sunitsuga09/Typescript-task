@@ -23,23 +23,23 @@
 
  */
 
-const keyboardPrice = 850000;
-const keyboardQty = 1;
-const mousePrice = 275000;
-const mouseQty = 2;
-const mousePadPrice = 120000;
-const mousePadQty = 1;
-const isPremiumMember = true;
+const keyboardPrice : number = 850000;
+const keyboardQty : number = 1;
+const mousePrice : number = 275000;
+const mouseQty : number = 2;
+const mousePadPrice : number = 120000;
+const mousePadQty : number = 1;
+const isPremiumMember : boolean = true;
 
-const subtotal = (keyboardPrice * keyboardQty) + (mousePrice * mouseQty) + (mousePadPrice * mousePadQty);
-let itemCount = 0;
+const subtotal : number = (keyboardPrice * keyboardQty) + (mousePrice * mouseQty) + (mousePadPrice * mousePadQty);
+let itemCount : number = 0;
 itemCount += keyboardQty;
 itemCount += mouseQty;
 itemCount += mousePadQty;
 
-const discount = subtotal > 1000000 ? subtotal * 0.1 : 0;
-const freeShipping = isPremiumMember;
-const finalPayment = subtotal - discount;
+const discount : number = subtotal > 1000000 ? subtotal * 0.1 : 0;
+const freeShipping : boolean = isPremiumMember;
+const finalPayment : number = subtotal - discount;
 
 console.log(`Subtotal: Rp${subtotal.toLocaleString('id-ID')}`);
 console.log(`Total Items: ${itemCount}`);

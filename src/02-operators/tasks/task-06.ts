@@ -14,16 +14,16 @@
  * - Final payment
  */
 
-const pricePerHour = 8000;
-const totalHours = 7;
-const totalMinutes = 35;
+const pricePerHour : number = 8000;
+const totalHours : number = 7;
+const totalMinutes : number = 35;
 
-const totalPlayingTimeMinutes = totalHours * 60 + totalMinutes;
-const remainingMinutes = totalPlayingTimeMinutes % 60;
-const billedHours = Math.ceil(totalPlayingTimeMinutes / 60);
-const paymentBeforeDiscount = billedHours * pricePerHour;
-const discountAmount = billedHours > 5 ? paymentBeforeDiscount * 0.15 : 0;
-const finalPayment = paymentBeforeDiscount - discountAmount;
+const totalPlayingTimeMinutes : number = totalHours * 60 + totalMinutes;
+const remainingMinutes : number = totalPlayingTimeMinutes % 60;
+const billedHours : number = Math.ceil(totalPlayingTimeMinutes / 60);
+const paymentBeforeDiscount : number = billedHours * pricePerHour;
+const discountAmount : number = billedHours > 5 ? paymentBeforeDiscount * 0.15 : 0;
+const finalPayment : number = paymentBeforeDiscount - discountAmount;
 
 console.log(`Total Playing Time: ${totalPlayingTimeMinutes} minutes`);
 console.log(`Remaining Minutes: ${remainingMinutes} minutes`);

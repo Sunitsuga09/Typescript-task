@@ -35,25 +35,25 @@
 
  */
 
-const keyboardPrice = 850000;
-const keyboardQuantity = 1;
-const mousePrice = 275000;
-const mouseQuantity = 2;
-const monitorStandPrice = 420000;
-const monitorStandQuantity = 1;
-const voucherValue = 100000;
-const isPremiumMember = true;
-const rewardPointRate = 50000;
-const vatRate = 0.11;
+const keyboardPrice : number = 850000;
+const keyboardQuantity : number = 1;
+const mousePrice : number = 275000;
+const mouseQuantity : number = 2;
+const monitorStandPrice : number = 420000;
+const monitorStandQuantity : number = 1;
+const voucherValue : number = 100000;
+const isPremiumMember : boolean = true;
+const rewardPointRate : number = 50000;
+const vatRate : number = 0.11;
 
-const productSubtotal = (keyboardPrice * keyboardQuantity) + (mousePrice * mouseQuantity) + (monitorStandPrice * monitorStandQuantity);
-const membershipDiscount = isPremiumMember ? productSubtotal * 0.1 : 0;
-const afterMembershipDiscount = productSubtotal - membershipDiscount;
-const paymentBeforeTax = afterMembershipDiscount - voucherValue;
-const vat = paymentBeforeTax * vatRate;
-const finalPayment = paymentBeforeTax + vat;
-const rewardPoints = Math.floor(paymentBeforeTax / rewardPointRate);
-const freeShipping = isPremiumMember || paymentBeforeTax > 1500000;
+const productSubtotal : number = (keyboardPrice * keyboardQuantity) + (mousePrice * mouseQuantity) + (monitorStandPrice * monitorStandQuantity);
+const membershipDiscount : number = isPremiumMember ? productSubtotal * 0.1 : 0;
+const afterMembershipDiscount : number = productSubtotal - membershipDiscount;
+const paymentBeforeTax : number = afterMembershipDiscount - voucherValue;
+const vat : number = paymentBeforeTax * vatRate;
+const finalPayment : number = paymentBeforeTax + vat;
+const rewardPoints : number = Math.floor(paymentBeforeTax / rewardPointRate);
+const freeShipping : boolean = isPremiumMember || paymentBeforeTax > 1500000;
 
 console.log(`Product Subtotal: Rp${productSubtotal.toLocaleString('id-ID')}`);
 console.log(`Membership Discount: Rp${membershipDiscount.toLocaleString('id-ID')}`);
