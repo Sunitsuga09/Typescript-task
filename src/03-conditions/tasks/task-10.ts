@@ -45,6 +45,7 @@ Student Tasks
 - Use nested conditional statements.
 - Display the final registration result.
  */
+
 const studentName: string = "Nadia Putri";
 const isActiveStuden: boolean = true;
 const isTuitionPaid: boolean = true;

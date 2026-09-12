@@ -22,6 +22,7 @@
  * 2. Implement the logic using nested if statements.
  * 3. Display the reservation result.
  */
+
 const customerName: string = "Nadia Putri";
 const isPremiumMember: boolean = true;
 const isRoomAvailable: boolean = false;

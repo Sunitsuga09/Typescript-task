@@ -14,6 +14,7 @@
  * 3. Display the evaluation result. If eligible will display "Bonus Approved", 
  * otherwise display "Bonus not approved"
  */
+
 const employeeName: string = "Dimas Pratama";
 const performanceScore: number = 78;
 

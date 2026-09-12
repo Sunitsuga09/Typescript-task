@@ -32,6 +32,7 @@
  *  - Implement the second screening only if the first screening is passed.
  *  - Display the correct result.
  */
+
 const studentName: string = "Fajar Hidayat";
 const gpa: number = 3.86;
 const familyIncome: number = 4200000;

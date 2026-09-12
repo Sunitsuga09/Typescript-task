@@ -27,6 +27,7 @@
  * 2. Implement the airline decision process.
  * 3. Display the correct message.
  */
+
 const passenger: string = "Fajar Nugroho";
 const hasCheckedInOnline: boolean = true;
 const cabinClass: string = "Economy";

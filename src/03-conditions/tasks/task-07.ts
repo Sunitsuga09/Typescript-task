@@ -30,6 +30,7 @@
  * 2. Implement both screening stages.
  * 3. Display the loan decision.
  */
+
 const applicant = "Andi Wijaya";
 const monthlyIncome = 10000000;
 const creditScore = 725;
