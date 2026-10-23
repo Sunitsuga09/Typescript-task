@@ -29,18 +29,27 @@ const scores = [
   97
 ];
 
-function findHighestScore(scores: number[]): number {
+function calculateTotalScores(scores: number[]): number {
+  return scores.reduce((total, amount) => total + amount, 0);
+}
 
+function findHighestScore(scores: number[]): number {
+  return Math.max(...scores);
 }
 
 function findLowestScore(scores: number[]): number {
-
+  return Math.min(...scores);
 }
 
 function calculateAverage(scores: number[]): number {
-    
+  return scores.length === 0 ? 0 : calculateTotalScores(scores) / scores.length;
 }
 
-function countPassedStudents(scores: number[]): number {
-
+function countPassedStudents(scores: number[], minimumAmount: number): number {
+  return scores.filter((amount) => amount > minimumAmount).length;
 }
+
+console.log(findHighestScore (scores))
+console.log(findLowestScore(scores))
+console.log(calculateAverage(scores))
+console.log(countPassedStudents(scores, 75))

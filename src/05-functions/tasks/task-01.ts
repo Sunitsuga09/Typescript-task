@@ -24,3 +24,18 @@
  * 5. Display every student's final grade.
 
  */
+
+function calculateFinalGrade(assignment: number, midterm: number, final: number): number {
+    let total = ((0.3) * assignment) + ((0.3) * midterm) + ((0.4) * final)
+    return total;
+}
+
+let Student1 = "Alya";
+let FinalExamScore1 = calculateFinalGrade(85,80,92);
+let Student2 = "Budi";
+let FinalExamScore2 = calculateFinalGrade(78,75,81);
+let Student3 = "citra";
+let FinalExamScore3 = calculateFinalGrade(90,88,95);
+console.log(Student1, FinalExamScore1)
+console.log(Student2, FinalExamScore2)
+console.log(Student3, FinalExamScore3)

@@ -26,21 +26,27 @@ const sales = [
 ];
 
 function calculateTotalSales(sales: number[]): number {
-
+  return sales.reduce((total, amount) => total + amount, 0);
 }
 
 function findHighestTransaction(sales: number[]): number {
-
+  return Math.max(...sales);
 }
 
 function findLowestTransaction(sales: number[]): number {
-
+  return Math.min(...sales);
 }
 
 function calculateAverageSale(sales: number[]): number {
-
+  return sales.length === 0 ? 0 : calculateTotalSales(sales) / sales.length;
 }
 
 function countLargeTransactions(sales: number[], minimumAmount: number): number {
-
+  return sales.filter((amount) => amount > minimumAmount).length;
 }
+
+console.log(calculateTotalSales(sales))
+console.log(findHighestTransaction(sales))
+console.log(findLowestTransaction(sales))
+console.log(calculateAverageSale(sales))
+console.log(countLargeTransactions(sales, 500000))
