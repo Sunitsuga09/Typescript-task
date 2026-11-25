@@ -27,11 +27,9 @@ console.log(`Customer Name: ${customerName}`);
 console.log(`Monthly Usage: ${monthlyUsage} GB`);
 
 if (monthlyUsage < 50) {
-    recommendedPackage = "Basic";
+    recommendedPackage = "Basic"
 } else if (monthlyUsage >= 50 && monthlyUsage <= 150) {
     recommendedPackage = "Standard";
 } else {
     recommendedPackage = "Premium";
 }
-
-console.log(`Recommended Package: ${recommendedPackage}`);
